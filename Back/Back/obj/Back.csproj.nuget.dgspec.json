@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\Back\\Back.csproj": {}
+    "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\Back\\Back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\Back\\Back.csproj": {
+    "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\Back\\Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\Back\\Back.csproj",
+        "projectUniqueName": "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\Back\\Back.csproj",
         "projectName": "Back",
-        "projectPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\Back\\Back.csproj",
-        "packagesPath": "C:\\Users\\SunPixel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\Back\\obj\\",
+        "projectPath": "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\Back\\Back.csproj",
+        "packagesPath": "C:\\Users\\Николай\\.nuget\\packages\\",
+        "outputPath": "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\Back\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SunPixel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Николай\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -53,6 +53,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.6, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.4.0, )"
             }
           },
           "imports": [
@@ -74,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
