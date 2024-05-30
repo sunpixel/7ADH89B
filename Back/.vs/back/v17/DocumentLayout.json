@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\u041F\u041E\u041B\u0418\u0422\u0415\u0425\\\u0414\u0417_\u0418\u043D\u0444\u043E\\Kurs-2_2\\Back\\",
+  "WorkspaceRootPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|d:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0434\u0437_\u0438\u043D\u0444\u043E\\kurs-2_2\\back\\back\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\back\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|solutionrelative:back\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\back\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|solutionrelative:back\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|d:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0434\u0437_\u0438\u043D\u0444\u043E\\kurs-2_2\\back\\back\\assets\\persons||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\back\\assets\\persons||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|solutionrelative:back\\assets\\persons||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|d:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0434\u0437_\u0438\u043D\u0444\u043E\\kurs-2_2\\back\\back\\assets\\persons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\back\\assets\\persons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|solutionrelative:back\\assets\\persons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|d:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0434\u0437_\u0438\u043D\u0444\u043E\\kurs-2_2\\back\\back\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\back\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39B3E2A3-2136-4300-AA40-E2BA318CDC9A}|back\\back.csproj|solutionrelative:back\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,8 +30,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -37,43 +45,50 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "back\\Controllers\\PersonController.cs",
+              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "back\\Controllers\\PersonController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAwCwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T23:51:16.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "persons.json",
+              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\Assets\\persons.json",
+              "RelativeDocumentMoniker": "back\\Assets\\persons.json",
+              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\Assets\\persons.json",
+              "RelativeToolTip": "back\\Assets\\persons.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-30T20:33:59.407Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "persons.json",
-              "DocumentMoniker": "D:\\\u041F\u041E\u041B\u0418\u0422\u0415\u0425\\\u0414\u0417_\u0418\u043D\u0444\u043E\\Kurs-2_2\\Back\\Back\\Assets\\persons.json",
-              "RelativeDocumentMoniker": "Back\\Assets\\persons.json",
-              "ToolTip": "D:\\\u041F\u041E\u041B\u0418\u0422\u0415\u0425\\\u0414\u0417_\u0418\u043D\u0444\u043E\\Kurs-2_2\\Back\\Back\\Assets\\persons.json",
-              "RelativeToolTip": "Back\\Assets\\persons.json",
+              "Title": "persons",
+              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\Assets\\persons",
+              "RelativeDocumentMoniker": "back\\Assets\\persons",
+              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\Assets\\persons",
+              "RelativeToolTip": "back\\Assets\\persons",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-30T20:33:59.407Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-30T20:33:55.516Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "persons",
-              "DocumentMoniker": "D:\\\u041F\u041E\u041B\u0418\u0422\u0415\u0425\\\u0414\u0417_\u0418\u043D\u0444\u043E\\Kurs-2_2\\Back\\Back\\Assets\\persons",
-              "RelativeDocumentMoniker": "Back\\Assets\\persons",
-              "ToolTip": "D:\\\u041F\u041E\u041B\u0418\u0422\u0415\u0425\\\u0414\u0417_\u0418\u043D\u0444\u043E\\Kurs-2_2\\Back\\Back\\Assets\\persons",
-              "RelativeToolTip": "Back\\Assets\\persons",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-30T20:33:55.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\\u041F\u041E\u041B\u0418\u0422\u0415\u0425\\\u0414\u0417_\u0418\u043D\u0444\u043E\\Kurs-2_2\\Back\\Back\\Program.cs",
-              "RelativeDocumentMoniker": "Back\\Program.cs",
-              "ToolTip": "D:\\\u041F\u041E\u041B\u0418\u0422\u0415\u0425\\\u0414\u0417_\u0418\u043D\u0444\u043E\\Kurs-2_2\\Back\\Back\\Program.cs",
-              "RelativeToolTip": "Back\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\Program.cs",
+              "RelativeDocumentMoniker": "back\\Program.cs",
+              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\Program.cs",
+              "RelativeToolTip": "back\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T20:32:22.932Z",
@@ -81,16 +96,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Person.cs",
-              "DocumentMoniker": "D:\\\u041F\u041E\u041B\u0418\u0422\u0415\u0425\\\u0414\u0417_\u0418\u043D\u0444\u043E\\Kurs-2_2\\Back\\Back\\Person.cs",
-              "RelativeDocumentMoniker": "Back\\Person.cs",
-              "ToolTip": "D:\\\u041F\u041E\u041B\u0418\u0422\u0415\u0425\\\u0414\u0417_\u0418\u043D\u0444\u043E\\Kurs-2_2\\Back\\Back\\Person.cs",
-              "RelativeToolTip": "Back\\Person.cs",
+              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\Person.cs",
+              "RelativeDocumentMoniker": "back\\Person.cs",
+              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\Person.cs",
+              "RelativeToolTip": "back\\Person.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T20:32:19.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T20:32:19.354Z"
             }
           ]
         }

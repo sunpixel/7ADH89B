@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TAgfVm8N04WY+/K6lwBEWeHZ/55DIEICPVXhJwSoB6U=",
+  "Hash": "yVoT0HcpK6IVHKwUvqihizqXg3vcBJc1+WzlPz2/Mok=",
   "Source": "back",
   "BasePath": "_content/back",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "back\\wwwroot",
       "Source": "back",
-      "ContentRoot": "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\back\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\wwwroot\\",
       "BasePath": "_content/back",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\back\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\wwwroot\\index.html",
       "SourceId": "back",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\back\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\wwwroot\\",
       "BasePath": "_content/back",
       "RelativePath": "index.html",
       "AssetKind": "All",

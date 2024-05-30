@@ -16,6 +16,7 @@ namespace Back.Controllers
         public IActionResult GetPersons()
         {
             string json = System.IO.File.ReadAllText($"{directory}/{fileName}.json");
+            // Обращение к БД для получения данных
             return Ok(json);
         }
 
@@ -28,6 +29,9 @@ namespace Back.Controllers
             persons.Add(person);
             string jsonSave = JsonConvert.SerializeObject(persons.ToArray(), Formatting.Indented);
             System.IO.File.WriteAllText($"{directory}/{fileName}.json", jsonSave);
+
+
+            // Обращение к БД для добавления данных
 
             return Ok();
         }
@@ -52,6 +56,9 @@ namespace Back.Controllers
 
                 return Ok();
             }
+
+            // Обращение к БД для изменения данных
+
 
             return NotFound();
         }
