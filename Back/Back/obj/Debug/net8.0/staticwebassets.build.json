@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "TAgfVm8N04WY+/K6lwBEWeHZ/55DIEICPVXhJwSoB6U=",
+  "Source": "back",
+  "BasePath": "_content/back",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "back\\wwwroot",
+      "Source": "back",
+      "ContentRoot": "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\back\\wwwroot\\",
+      "BasePath": "_content/back",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\back\\wwwroot\\index.html",
+      "SourceId": "back",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\back\\wwwroot\\",
+      "BasePath": "_content/back",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

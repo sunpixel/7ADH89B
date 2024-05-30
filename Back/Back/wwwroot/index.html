@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Контакты</title>
+    <script>
+        function loadPersons() {
+            fetch('/persons')
+                .then(response => response.json())
+                .then(data =>
+                {
+                    let personsTable = document.getElementById('personsTable');
+                    personsTable.innerHTML = '';
+                    for (let person of data) {
+                        let row = "<tr><td>" + person.Name + "</td><td>" + person.Email + "</td><td>" + person.Phone + "</td></tr>";
+                        personsTable.innerHTML += row;
+                    }
+                });
+        }
+
+        function addPerson() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+
+            fetch('/persons',
+            {
+                method: 'POST',
+                body: JSON.stringify({ Name: name, Email: email, Phone: phone }),
+                headers:
+                {
+                    'Content-Type': 'application/json'
+                }
+            }).then(() => {
+                loadPersons();
+            });
+        }
+
+        function updatePersons() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            let radio = document.querySelector('input[name="radio"]:checked').value;
+
+            let tuple = {
+                Item1: radio,
+                Item2: {
+                    Name: name,
+                    Email: email,
+                    Phone: phone
+                }
+            };
+
+            fetch('/persons', {
+                method: 'PUT',
+                body: JSON.stringify(tuple),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(() => {
+                loadPersons();
+            });
+        }
+
+        window.onload = function() {
+            loadPersons();
+        }
+    </script>
+</head>
+<body>
+    <h2>Контакты</h2>
+    <table id="personsTable" border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </table>
+    <br>
+    <input type="text" id="name" placeholder="Введите Name">
+    <input type="text" id="email" placeholder="Введите Email">
+    <input type="text" id="phone" placeholder="Введите Phone">
+    <button onclick="addPerson()">Добавить контакт</button>
+    </br>
+    </br>
+    </br>
+    <button onclick="updatePersons()">Обновить контакт</button>
+    <div>
+        <div>Выберите, по какому полю искать:</div>
+        <div>
+            <input type="radio" id="radio1" name="radio" value="Name" checked />
+            <label>Name</label>
+        </div>
+        <div>
+            <input type="radio" id="radio2" name="radio" value="Email" />
+            <label>Email</label>
+        </div>
+        <div>
+            <input type="radio" id="radio3" name="radio" value="Phone" />
+            <label>Phone</label>
+        </div>
+    </div>
+</body>
+</html>

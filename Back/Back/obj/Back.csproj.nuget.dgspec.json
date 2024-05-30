@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\back.csproj": {}
+    "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\back\\back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\back.csproj": {
+    "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\back\\back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\back.csproj",
+        "projectUniqueName": "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\back\\back.csproj",
         "projectName": "back",
-        "projectPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\back.csproj",
-        "packagesPath": "C:\\Users\\SunPixel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\obj\\",
+        "projectPath": "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\back\\back.csproj",
+        "packagesPath": "C:\\Users\\Николай\\.nuget\\packages\\",
+        "outputPath": "D:\\ПОЛИТЕХ\\ДЗ_Инфо\\Kurs-2_2\\Back\\back\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SunPixel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Николай\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -49,6 +49,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -68,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
