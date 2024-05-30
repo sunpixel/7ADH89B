@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Login from './pages/login.jsx'
 import NotFound from './pages/NotFound.jsx'
+import Profile from './pages/profile.jsx'
 
 import './index.css'
 
@@ -20,7 +21,11 @@ const router = createBrowserRouter([
   {
     path: "login",
     element: <Login/>
-  }
+  },
+  {
+    path: "profile",
+    element: <Profile/>
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

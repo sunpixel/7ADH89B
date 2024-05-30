@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 import './NotFound.css'
 
-export default function NotFound(){
+export default function NotFound() {
     return (
-        <body>
+        <body className="notFound">
             <div id="error-page">
                 <div className="content">
                     <h2 className="header" data-text="404">

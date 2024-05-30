@@ -1,6 +1,6 @@
 import './login.css'
 
-function profile(){
+function window(){
     return (
         <body>
             <div className='Login'>
@@ -26,4 +26,4 @@ function profile(){
 }
 
 
-export default profile
+export default window
