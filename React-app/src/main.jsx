@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import App from './App.jsx'
-import Profile from './pages/profile.jsx'
+import Login from './pages/login.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 import './index.css'
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
     errorElement: <NotFound/>
   },
   {
-    path: "profile",
-    element: <Profile/>
+    path: "login",
+    element: <Login/>
   }
 ])
 
