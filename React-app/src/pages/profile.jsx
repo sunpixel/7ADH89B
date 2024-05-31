@@ -6,7 +6,7 @@ import Navigation from './Nav/Navigation';
 
 
 function profile() {
-    const [fname, getfname] = useState('Name SurName MiddleName')
+    const [fname, getfname] = useState('Sanych Pixel Gromov')
     const [avggrade, avggetgrade] = useState('5')
     const [university, getuniversity] = useState('Kazakh National University')
     const [speciality, getspeciality] = useState('Computer Science')
@@ -32,6 +32,9 @@ function profile() {
             }, [])}
 
             <div>
+                <div className='Navigator'>
+                    <Navigation/>
+                </div>
                 <div className="Pro_card">
                     <div className='Image'>
                         <img src={img} alt="" style={{ objectFit: 'cover', width: '100%', height: '100%', borderRadius: '50%' }} />
@@ -54,7 +57,6 @@ function profile() {
                     </div>
                     <div className='rect'></div>
                 </div>
-                <Navigation/>
             </div>
         </div>
     );
