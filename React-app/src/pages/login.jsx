@@ -26,4 +26,9 @@ function window(){
 }
 
 
+function send_data(){
+    
+}
+
+
 export default window
