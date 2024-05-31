@@ -36,11 +36,17 @@
 
 .rectangle-17 {
     width: 250px;
-    height: 60px;
+    height: 70px;
     flex-shrink: 0;
     border-radius: 8px;
     background: #D9D9D9;
     margin-top: 60px;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
 }
 
 .rectangle-17:first-of-type {

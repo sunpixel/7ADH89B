@@ -4,6 +4,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddRazorPages();
+builder.Services.AddCors();
 
 var app = builder.Build();
 

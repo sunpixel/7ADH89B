@@ -9,3 +9,18 @@
     gap: 10px;
     flex-shrink: 0;
 }
+
+.Nav_Container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Nav_Container-1 {
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.Nav_Container-1 h2 {
+    margin: 0;
+}
