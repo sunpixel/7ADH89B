@@ -1,4 +1,4 @@
-import './profile.css'
+import './css//profile.css'
 import img from '../assets/IMG_1857.jpg'
 import { useState, useEffect } from 'react';
 import navBar from './Nav/Navigation';
