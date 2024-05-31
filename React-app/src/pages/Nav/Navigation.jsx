@@ -1,4 +1,4 @@
-import './Navigation.css'
+import '../css/Navigation.css'
 import { useNavigate } from 'react-router-dom';
 
 
@@ -13,7 +13,7 @@ function Navigation ()
     return (
         <div className='Nav'>
             <div className='Nav_Container'>
-                <button id="sb_1" className='Nav_Container-1' onClick={() => redirect('/')}>
+                <button id="sb_1" className='Nav_Container-1' onClick={() => redirect('/grades')}>
                     <h2 className='text-align'>GRADES</h2>
                 </button>
                 <button id="sb_2" className='Nav_Container-1' onClick={() => redirect('/hw')}>
