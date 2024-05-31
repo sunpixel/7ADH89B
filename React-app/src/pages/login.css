@@ -1,0 +1,74 @@
+
+.login * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.login body {
+    height: 100vh;
+    background-color: #242424;
+    display: flex; /* make body a flex container */
+    justify-content: center; /* center children horizontally */
+    align-items: center; /* center children vertically */
+}
+
+.Login {
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
+    justify-content: center;
+    background-color:#A1A1A1;
+    border-radius: 30px;
+    background: gray;
+    margin: auto; /* center the Login box */
+}
+
+.Typo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Inika;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 36px */
+}
+
+#Welcome {
+    margin-bottom: 40px;
+}
+.container{
+    margin-top: 60px;
+}
+
+.input1 input {
+    width: 450px; /* make the input field as wide as its container */
+    height: 60px; /* set a specific height */
+    font-size: 20px; /* increase the font size */
+    padding: 10px; /* add some padding */
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+.input1 input::placeholder {
+    color: #999;
+    opacity: 1; /* Firefox */
+}
+
+
+.btn button{
+    width: 400px;
+    height: 60px;
+    flex-shrink: 0;
+    background: #FFC700;
+    margin-top: 40px;
+}
+
+.btn button:hover {
+    background: #FFA500; /* change the color on hover */
+}

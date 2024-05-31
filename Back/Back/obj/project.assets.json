@@ -205,23 +205,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SunPixel\\.nuget\\packages\\": {},
+    "C:\\Users\\SunnyPixel\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\back.csproj",
       "projectName": "back",
       "projectPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\back.csproj",
       "packagesPath": "C:\\Users\\SunPixel\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\SunnyPixel\\Desktop\\Programming\\GitRepos\\7ADH89B\\Back\\Back\\Back.csproj",
+      "projectName": "Back",
+      "projectPath": "C:\\Users\\SunnyPixel\\Desktop\\Programming\\GitRepos\\7ADH89B\\Back\\Back\\Back.csproj",
+      "packagesPath": "C:\\Users\\SunnyPixel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SunnyPixel\\Desktop\\Programming\\GitRepos\\7ADH89B\\Back\\Back\\obj\\",
+>>>>>>> React-app
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\SunPixel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SunnyPixel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
