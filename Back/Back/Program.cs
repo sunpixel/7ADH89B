@@ -1,10 +1,13 @@
-var builder = WebApplication.CreateBuilder(args);
+using back.Data;
 
+var builder = WebApplication.CreateBuilder();
+
+// Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-
 builder.Services.AddRazorPages();
 builder.Services.AddCors();
+builder.Services.AddDbContext<AppDbContext>();
 
 var app = builder.Build();
 
@@ -16,16 +19,18 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.UseDefaultFiles();
 app.UseStaticFiles();
-
 app.UseRouting();
-
+app.UseCors(policy =>
+{
+    policy.AllowAnyOrigin();
+    policy.AllowAnyHeader();
+    policy.AllowAnyMethod();
+});
+app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapRazorPages();
-
 app.MapControllers();
+app.MapRazorPages();
 
 app.Run();

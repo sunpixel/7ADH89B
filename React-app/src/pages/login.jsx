@@ -8,7 +8,7 @@ function Login() {
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
 
-        fetch("https://localhost:7095/login", {
+        fetch("https://localhost:7128/login", {
             method: "POST",
             body: JSON.stringify({ username: username, password: password }),
         })

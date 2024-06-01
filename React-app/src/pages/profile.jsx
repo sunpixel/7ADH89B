@@ -16,7 +16,7 @@ function profile() {
     return (
         <div>
             {useEffect(() => {
-                fetch(`https://localhost:7095/api/Student/${id}`, {
+                fetch(`https://localhost:7128/api/UserInfo/${id}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
