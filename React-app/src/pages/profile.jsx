@@ -1,39 +1,40 @@
-import './css//profile.css'
-import img from '../assets/IMG_1857.jpg'
+import './css/profile.css';
+import img from '../assets/IMG_1857.jpg';
 import { useState, useEffect } from 'react';
-import navBar from './Nav/Navigation';
+import { useLocation } from 'react-router-dom';
 import Navigation from './Nav/Navigation';
 
+function Profile() {
+    const location = useLocation();
+    const { id } = location.state;
 
-function profile() {
-    const [fname, getfname] = useState('Sanych Pixel Gromov')
-    const [avggrade, avggetgrade] = useState('5')
-    const [university, getuniversity] = useState('Kazakh National University')
-    const [speciality, getspeciality] = useState('Computer Science')
-    const [id, getid] = useState('1')
+    const [fname, getfname] = useState('');
+    const [avggrade, avggetgrade] = useState('');
+    const [university, getuniversity] = useState('');
+    const [speciality, getspeciality] = useState('');
 
+    useEffect(() => {
+        fetch(`https://localhost:7128/api/UserInfo/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+            .then(response => response.json())
+            .then(data => {
+                getfname(data.fullName);
+                avggetgrade(data.avG_Grade);
+                getuniversity(data.university);
+                getspeciality(data.speciality);
+            })
+            .catch(error => console.error("Error fetching user info:", error));
+    }, [id]);
 
     return (
         <div>
-            {useEffect(() => {
-                fetch(`https://localhost:7128/api/UserInfo/${id}`, {
-                    method: 'GET',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    }
-                })
-                    .then(response => response.json())
-                    .then(data => {
-                        getfname(data.name)
-                        avggetgrade(data.grade)
-                        getuniversity(data.ut)
-                        getspeciality(data.spec)
-                    })
-            }, [])}
-
             <div>
                 <div className='Navigator'>
-                    <Navigation/>
+                    <Navigation />
                 </div>
                 <div className="Pro_card">
                     <div className='Image'>
@@ -62,5 +63,4 @@ function profile() {
     );
 }
 
-
-export default profile
+export default Profile;
