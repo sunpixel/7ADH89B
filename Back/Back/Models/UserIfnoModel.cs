@@ -13,6 +13,6 @@ namespace back.Models
         public string Speciality { get; set; }
 
         [ForeignKey("User_ID")]
-        public UserModel User { get; set; }
+        public UserModel Usr_ID { get; set; }
     }
 }
