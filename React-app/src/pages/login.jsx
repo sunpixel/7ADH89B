@@ -4,36 +4,53 @@ import { useNavigate } from 'react-router-dom';
 function Login() {
     const navigate = useNavigate();
 
-    function send_data() {
+    async function send_data() {
+
+        if (!document.getElementById("username").value && !document.getElementById("password").value) {
+            alert("Please enter username and password");
+            return;
+        }
+
+        else if (!document.getElementById("username").value) {
+            alert("Please enter username");
+            return;
+        }
+        else if (!document.getElementById("password").value) {
+            alert("Please enter password");
+            return;
+        }
+
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
 
-        fetch("https://localhost:7128/api/login", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ username: username, password: password }),
-        })
-            .then((response) => {
-                if (response.ok) {
-                    // Handle successful response
-                    console.log("Request successful");
-                    response.json().then((data) => {
-                        // Pass the id to the profile component via navigation state
-                        const id = data.userId;
-                        console.log("Received id:", id);
-                        navigate('/profile', { state: { id } });
-                    });
-                } else {
-                    // Handle error response
-                    console.log("Request failed");
-                }
-            })
-            .catch(() => {
-                // Handle network error
-                console.log("Network error");
+        try {
+            const response = await fetch("https://localhost:7128/api/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ username: username, password: password }),
             });
+
+            if (response.ok) {
+                // Handle successful response
+                console.log("Request successful");
+                const data = await response.json();
+                // Pass the id to the profile component via navigation state
+                const id = data.userId;
+                console.log("Received id:", id);
+                navigate('/profile', { state: { id } });
+            } else {
+                // Handle error response
+                console.log("Request failed");
+                const errorCode = response.status;
+                alert(`Connection refused. Error code: ${errorCode}`);
+            }
+        } catch (error) {
+            // Handle network error
+            alert(`Network error. ${error}`);
+            console.log("Network error");
+        }
     }
 
     return (

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navigation from './Nav/Navigation';
 
-function Profile() {
+async function Profile() {
     const location = useLocation();
     const { id } = location.state;
 
