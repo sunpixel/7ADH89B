@@ -529,3 +529,4 @@ C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\bin\Debug\n
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\bin\Debug\net8.0\objects.json

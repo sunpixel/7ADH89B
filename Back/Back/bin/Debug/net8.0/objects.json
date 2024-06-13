@@ -1,0 +1,35 @@
+﻿
+{
+  // Отправка данных от ТЕБЯ
+  "User": {
+    "Password": "YaLox",
+    "Username": "LoL0loshkla"
+  },
+
+  // Формат получаемых данных
+
+  "UserInfo": {
+    "Id": 12,
+    "FirstName": "Nikita",
+    "LastName": "Tarakin",
+    "Email": "Yan@ya.ru",
+    "Phone": "+7(925)-411-0000", // Можно так красиво сформатировать но это не обязательно
+    "Grade": 4.75,
+    "University": "Mos Poly Tech",
+    "Speciality": "Automated Systems"
+  },
+
+  "Group": {
+    "Id": 1,
+    "Number": "221-374",
+    "ModeOfStudy": "Очная" // Форма обучения (Очная, Заочная и т.д.)
+  },
+
+  "HomeWork": {
+    "Id": 12, // Идентификатор предмета к примеру: 1 - Русский, 2 - Математика и т.д.
+    "Name": "Английский",
+    Dead
+  }
+
+
+}
