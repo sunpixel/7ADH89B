@@ -18,11 +18,11 @@ namespace back.Controllers // Update with your namespace
             _context = context;
         }
 
-        // GET: api/UserInfo/5
+/*        // GET: api/UserInfo/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<UserIfnoModel>> GetUserInfo(int id)
+        public async Task<ActionResult<UserInfo>> GetUserInfo(int id)
         {
-            var userInfo = await _context.UsersIfno.FindAsync(id);
+            var userInfo = await _context.UserInfos.FindAsync(id);
 
             if (userInfo == null)
             {
@@ -30,6 +30,6 @@ namespace back.Controllers // Update with your namespace
             }
 
             return Ok(userInfo); // Returns JSON data
-        }
+        }*/
     }
 }

@@ -8,8 +8,11 @@ namespace back.Data
     public class AppDbContext : DbContext
     {
 
-        public DbSet<UserModel> Users { get; set; }
-        public DbSet<UserIfnoModel> UsersIfno { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserInfo> UsersInfos { get; set; }
+        public DbSet<HomeWork> HomeWorks { get; set; }
+        public DbSet<Group> Groups { get; set; }
+        public DbSet<Schedule> Schedules { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
