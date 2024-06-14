@@ -1,6 +1,8 @@
 ﻿using back.Data;
+using Humanizer.Bytes;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using back.Additional;
 
 namespace back.Controllers
 {
@@ -19,7 +21,15 @@ namespace back.Controllers
         public IActionResult Authenticate([FromBody] UserCredentials userCredentials)
         {
             // Find the user by username and password
-            var user = _context.Users.FirstOrDefault(u => u.Username == userCredentials.Username && u.Password == userCredentials.Password);
+
+            var sup = new Supplementary();
+
+            // Each user must be made with this code
+
+            var user = _context.Users.FirstOrDefault(u => 
+            u.Username == sup.MakeHash(userCredentials.Username).ToString() &&
+            u.Password == sup.MakeHash(userCredentials.Password).ToString());
+
 
             if (user == null)
             {
@@ -29,11 +39,8 @@ namespace back.Controllers
             return Ok(new { UserId = user.Id });
         }
     }
-
-    public class UserCredentials
-    {
-        public string Username { get; set; }
-        public string Password { get; set; }
-    }
 }
+
+
+
 

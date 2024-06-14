@@ -9,7 +9,15 @@ builder.Services.AddRazorPages();
 builder.Services.AddCors();
 builder.Services.AddDbContext<AppDbContext>();
 
+
+
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -21,12 +29,14 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+
 app.UseCors(policy =>
 {
     policy.AllowAnyOrigin();
     policy.AllowAnyHeader();
     policy.AllowAnyMethod();
 });
+
 app.UseAuthentication();
 app.UseAuthorization();
 

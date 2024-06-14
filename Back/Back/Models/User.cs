@@ -10,6 +10,6 @@ namespace back.Models
         public string Username { get; set; } = null!;
         public string Password { get; set; } = null!;
         public UserInfo UserInfo { get; set; } = null!;
-        public Group Group { get; set; } = null!;
+        public Group? Group { get; set; }
     }
 }
