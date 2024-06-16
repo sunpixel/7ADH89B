@@ -9,7 +9,10 @@ namespace back.Models
         public string Id { get; set; } = null!;
         public string Username { get; set; } = null!;
         public string Password { get; set; } = null!;
-        public UserInfo UserInfo { get; set; } = null!;
-        public Group? Group { get; set; }
+
+
+        // Navigation properties
+        public UserInfo UserInfo { get; set; }
+        public Group Group { get; set; }
     }
 }

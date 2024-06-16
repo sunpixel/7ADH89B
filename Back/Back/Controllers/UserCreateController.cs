@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Logging;
 using NuGet.Protocol;
+using System.Text.RegularExpressions;
 
 namespace back.Controllers
 {
@@ -23,6 +24,8 @@ namespace back.Controllers
             _logger = logger;
         }
 
+        // Group ID is required when creating new USER
+
         [HttpPost]
         public async Task<ActionResult> CreateAsync([FromBody] UserCredentials credentials)
         {
@@ -31,43 +34,79 @@ namespace back.Controllers
             {
                 var _sup = new Supplementary();
 
-                string User = _sup.MakeHash(credentials.Username);  // Hashing data 
+                string User = credentials.Username;
                 string Pass = _sup.MakeHash(credentials.Password);  // Hashing data
                 string ID = await _sup.Id_creator();
+
+                var G_Id = await _context.Groups.FirstOrDefaultAsync(g => g.Id == credentials.Group_Id);
+
+                if (G_Id == null)
+                {
+                    var group = new Models.Group()
+                    {
+                        Id = credentials.Group_Id,
+                        Number = "221-",
+                        ModeOfStudy = "Full",
+                    };
+
+                    _context.Groups.Add(group);
+                    _logger.LogInformation("Group created succesefuly");
+                    _context.SaveChanges();
+
+                    // throw new InvalidOperationException($"Group with name '{credentials.Group_Id.ToString()}' not found.");
+                }
+
+                if (G_Id != null) { _logger.LogInformation($"Group found {G_Id}"); }
+
+
+
 
                 var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Id == ID);
 
                 // Проверяет маловероятную ситуацию, когда Guid сделал тот же ID для пользователя что уже существует
 
-                if (existingUser == null)
+                var check = _context.Users.FirstOrDefault(u =>
+                                    u.Username == User);
+                if (check == null)
                 {
-
-                    _logger.LogInformation($"Existing User: {existingUser}");
-                    _logger.LogInformation($"Current User:  {ID}");
-
-
-                    _logger.LogInformation("Final stage");
-                    var check = _context.Users.FirstOrDefault(u =>
-                    u.Username == User);
-                    if (check == null)
+                    var User_data = new User
                     {
-                        _logger.LogInformation("Final check passed");
-                        var User_data = new Models.User
-                        {
-                            Id = ID,
-                            Username = User,
-                            Password = Pass
-                        };
+                        Id = ID,
+                        Username = User,
+                        Password = Pass
+                    };
 
-                        _context.Users.Add(User_data);
-                        _logger.LogInformation("User data added");
-                        _logger.LogInformation($"User data = \nID:{User_data.Id} \nUsername{User_data.Username} \nPassword{User_data.Password}");
-                        await _context.SaveChangesAsync();
-                        _logger.LogWarning("Updated DB");
+                    var Group_found = _context.Groups
+                       .Include(g => g.User) // Ensure the User collection is loaded
+                       .FirstOrDefault(g => g.Id == credentials.Group_Id);
+                    _logger.LogInformation($"Group found - {Group_found}");
 
-                    }
+                    User_data.Group = Group_found;
+                    _logger.LogInformation("Group added into user");
+
+                    Group_found.User.Add(User_data);
+                    _logger.LogInformation("User added in Group");
+
+                    //_context.Users.Add(User_data);
+
+                    var User_info = new Models.UserInfo
+                    {
+                        FirstName = "Ivan",             // Making a default value
+                        University = "None",             // Default value
+                        UserId = ID
+                    };
+
+
+                    _logger.LogInformation($"User data = \nID:{User_data.Id} \nUsername{User_data.Username} \nPassword{User_data.Password}");
+                    await _context.SaveChangesAsync();
+                    //
+                    char a = '-';
+                    string dec = new(a, 25);
+                    _logger.LogInformation($"{dec}");
+                    //
+                    _logger.LogInformation("Updated DB");
+
                 }
-                _logger.LogInformation("Loop exited");
 
                 return Ok();
             }

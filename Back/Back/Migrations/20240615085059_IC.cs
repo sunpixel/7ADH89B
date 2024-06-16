@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace back.Migrations
 {
     /// <inheritdoc />
-    public partial class ic : Migration
+    public partial class IC : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -32,7 +32,7 @@ namespace back.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
-                    DeadLine = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    DeadLine = table.Column<DateOnly>(type: "TEXT", nullable: false),
                     Assignement = table.Column<string>(type: "TEXT", nullable: true),
                     GroupId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
@@ -41,6 +41,27 @@ namespace back.Migrations
                     table.PrimaryKey("PK_HomeWorks", x => x.Id);
                     table.ForeignKey(
                         name: "FK_HomeWorks_Groups_GroupId",
+                        column: x => x.GroupId,
+                        principalTable: "Groups",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Schedules",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Day = table.Column<DateOnly>(type: "TEXT", nullable: false),
+                    Time = table.Column<TimeOnly>(type: "TEXT", nullable: false),
+                    GroupId = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Schedules", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Schedules_Groups_GroupId",
                         column: x => x.GroupId,
                         principalTable: "Groups",
                         principalColumn: "Id",
@@ -99,6 +120,12 @@ namespace back.Migrations
                 column: "GroupId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Schedules_GroupId",
+                table: "Schedules",
+                column: "GroupId",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Users_GroupId",
                 table: "Users",
                 column: "GroupId");
@@ -115,6 +142,9 @@ namespace back.Migrations
         {
             migrationBuilder.DropTable(
                 name: "HomeWorks");
+
+            migrationBuilder.DropTable(
+                name: "Schedules");
 
             migrationBuilder.DropTable(
                 name: "UsersInfos");

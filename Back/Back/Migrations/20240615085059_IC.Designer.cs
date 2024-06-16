@@ -11,8 +11,8 @@ using back.Data;
 namespace back.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240613183021_ic")]
-    partial class ic
+    [Migration("20240615085059_IC")]
+    partial class IC
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,7 +48,7 @@ namespace back.Migrations
                     b.Property<string>("Assignement")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("DeadLine")
+                    b.Property<DateOnly>("DeadLine")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("GroupId")
@@ -63,6 +63,29 @@ namespace back.Migrations
                     b.HasIndex("GroupId");
 
                     b.ToTable("HomeWorks");
+                });
+
+            modelBuilder.Entity("back.Models.Schedule", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateOnly>("Day")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("GroupId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<TimeOnly>("Time")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GroupId")
+                        .IsUnique();
+
+                    b.ToTable("Schedules");
                 });
 
             modelBuilder.Entity("back.Models.User", b =>
@@ -132,8 +155,19 @@ namespace back.Migrations
             modelBuilder.Entity("back.Models.HomeWork", b =>
                 {
                     b.HasOne("back.Models.Group", "Group")
-                        .WithMany()
+                        .WithMany("HomeWorks")
                         .HasForeignKey("GroupId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Group");
+                });
+
+            modelBuilder.Entity("back.Models.Schedule", b =>
+                {
+                    b.HasOne("back.Models.Group", "Group")
+                        .WithOne("Schedule")
+                        .HasForeignKey("back.Models.Schedule", "GroupId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -143,7 +177,7 @@ namespace back.Migrations
             modelBuilder.Entity("back.Models.User", b =>
                 {
                     b.HasOne("back.Models.Group", "Group")
-                        .WithMany()
+                        .WithMany("User")
                         .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -157,6 +191,16 @@ namespace back.Migrations
                         .WithOne("UserInfo")
                         .HasForeignKey("back.Models.UserInfo", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("back.Models.Group", b =>
+                {
+                    b.Navigation("HomeWorks");
+
+                    b.Navigation("Schedule")
                         .IsRequired();
 
                     b.Navigation("User");
