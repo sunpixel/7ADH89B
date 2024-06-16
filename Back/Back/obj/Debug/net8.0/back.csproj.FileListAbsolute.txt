@@ -536,3 +536,8 @@ C:\Users\SunnyPixel\Desktop\Programming\GitRepos\7ADH89B\Back\back\bin\Debug\net
 C:\Users\SunnyPixel\Desktop\Programming\GitRepos\7ADH89B\Back\back\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\SunnyPixel\Desktop\Programming\GitRepos\7ADH89B\Back\back\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\SunnyPixel\Desktop\Programming\GitRepos\7ADH89B\Back\back\obj\Debug\net8.0\back.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\obj\Debug\net8.0\back.MvcApplicationPartsAssemblyInfo.cs

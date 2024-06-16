@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using NuGet.Protocol;
 using System.Text.RegularExpressions;
 
-namespace back.Controllers
+namespace back.Controllers.Creators
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -27,7 +27,7 @@ namespace back.Controllers
         // Group ID is required when creating new USER
 
         [HttpPost]
-        public async Task<ActionResult> CreateAsync([FromBody] UserCredentials credentials)
+        public async Task<ActionResult> Create([FromBody] UserCredentials credentials)
         {
             _logger.LogInformation("entered creation mode");
             try
@@ -44,7 +44,7 @@ namespace back.Controllers
                 var check = _context.Users.FirstOrDefault(u =>
                     u.Username == User);
 
-                if (G_Id == null && check != null)
+                if (G_Id == null && check == null)
                 {
                     var group = new Models.Group()
                     {
@@ -74,17 +74,18 @@ namespace back.Controllers
                     var Group_found = _context.Groups
                        .Include(g => g.User) // Ensure the User collection is loaded
                        .FirstOrDefault(g => g.Id == credentials.Group_Id);
+
                     _logger.LogInformation($"Group found - {Group_found}");
 
-                    User_data.Group = Group_found;
+                    User_data.Group = Group_found!;
                     _logger.LogInformation("Group added into user");
 
-                    Group_found.User.Add(User_data);
+                    Group_found!.User.Add(User_data);
                     _logger.LogInformation("User added in Group");
 
                     //_context.Users.Add(User_data);
 
-                    var User_info = new Models.UserInfo
+                    var User_info = new UserInfo
                     {
                         FirstName = "Ivan",             // Making a default value
                         University = "None",             // Default value

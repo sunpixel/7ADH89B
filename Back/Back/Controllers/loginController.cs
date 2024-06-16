@@ -17,8 +17,8 @@ namespace back.Controllers
             _context = context;
         }
 
-        [HttpPost]
-        public IActionResult Authenticate([FromBody] UserCredentials userCredentials)
+/*        [HttpPost]
+        public IActionResult Authenticate([FromBody] ScheduleCredentials schedule)
         {
             // Find the user by username and password
 
@@ -37,7 +37,7 @@ namespace back.Controllers
             }
 
             return Ok(new { UserId = user.Id });
-        }
+        }*/
     }
 }
 
