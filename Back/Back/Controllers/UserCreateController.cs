@@ -38,9 +38,13 @@ namespace back.Controllers
                 string Pass = _sup.MakeHash(credentials.Password);  // Hashing data
                 string ID = await _sup.Id_creator();
 
-                var G_Id = await _context.Groups.FirstOrDefaultAsync(g => g.Id == credentials.Group_Id);
+                var G_Id = await _context.Groups.FirstOrDefaultAsync(g =>
+                    g.Id == credentials.Group_Id);
 
-                if (G_Id == null)
+                var check = _context.Users.FirstOrDefault(u =>
+                    u.Username == User);
+
+                if (G_Id == null && check != null)
                 {
                     var group = new Models.Group()
                     {
@@ -56,17 +60,8 @@ namespace back.Controllers
                     // throw new InvalidOperationException($"Group with name '{credentials.Group_Id.ToString()}' not found.");
                 }
 
-                if (G_Id != null) { _logger.LogInformation($"Group found {G_Id}"); }
-
-
-
-
-                var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Id == ID);
-
                 // Проверяет маловероятную ситуацию, когда Guid сделал тот же ID для пользователя что уже существует
 
-                var check = _context.Users.FirstOrDefault(u =>
-                                    u.Username == User);
                 if (check == null)
                 {
                     var User_data = new User
