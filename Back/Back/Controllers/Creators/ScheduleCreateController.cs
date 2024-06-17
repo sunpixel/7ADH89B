@@ -28,7 +28,7 @@ namespace back.Controllers.Creators
             {
                 _logger.LogInformation("Schedule creation");
                 var Group_found = _context.Groups
-                    .Include(g => g.User)   // Ensure the Schedule is loaded
+                    .Include(g => g.Schedule)   // Ensure the Schedule is loaded
                     .FirstOrDefault(g => g.Id == homeWork.Group_Id);
                 
                 if (Group_found == null)
@@ -51,11 +51,13 @@ namespace back.Controllers.Creators
 
                     sc.Group = Group_found;
 
-                    _context.Schedules.Add(sc);
+                    Group_found.Schedule.Add(sc);
+
                     _context.SaveChanges();
+
+                    return Ok();
                 }
 
-                return Ok();
             }
 
             catch (Exception ex)

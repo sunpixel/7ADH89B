@@ -11,7 +11,7 @@ namespace back.Models
 
 
         // Navigation properties
-        public Schedule Schedule { get; set; }
+        public ICollection<Schedule> Schedule { get; set; }
         public ICollection<User> User { get; set; }
         public ICollection<HomeWork> HomeWorks { get; set; }
     }

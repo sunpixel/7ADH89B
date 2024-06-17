@@ -25,18 +25,18 @@ namespace back.Controllers
                 return NotFound($"Group with id '{group_id.ToString()}' doesn't exist.");
             }
 
-            var Schedule = await _context.HomeWorks
+            var HomeWork = await _context.HomeWorks
                 .Where(s => s.Group == group)
                 .ToListAsync();
 
-            if (Schedule == null)
+            if (HomeWork == null)
             {
                 return NotFound($"Schedule for group '{group_id.ToString()}' doesn't exist.");
             }
             else
             {
 
-                return Ok(Schedule);
+                return Ok(HomeWork);
             }
         }
 

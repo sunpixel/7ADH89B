@@ -9,8 +9,7 @@ namespace back.Models
         public string Day { get; set; } = null!;
         public string Time { get; set; } = null!;
 
-        [ForeignKey("Group")]
-        public int GroupId {  get; set; }
+        // Navigation properties
         public Group Group { get; set; } = null!;
     }
 }
