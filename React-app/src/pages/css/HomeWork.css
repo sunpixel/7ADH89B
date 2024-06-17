@@ -1,0 +1,147 @@
+.NavBar{
+  display: 'flex';
+  align-Items: 'center';
+}
+
+.HW {
+  display: flex;
+  height: 1080px;
+  width: 1920px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.HW_Container {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.TopPanelBody{  
+  width: 90%;
+  height: 5vmin;
+  background: #D9D9D9;
+  border-radius: 0% 0% 2vmin 2vmin;
+
+  top:0%;
+  left:5%;
+
+  padding: 10px;
+  position: absolute;
+}
+
+.EventNewsBody{
+  font-family: Inter;
+  font-size: 30%;
+  font-weight: 400px;
+  line-height: 30%;
+  text-align: center;  
+  color: #FFFFFF;  
+  
+  top: 18.75%;   
+
+  width: 23.93%;
+  height: 62.5%;
+  border-radius: 3vmin;
+
+  position: absolute;
+  display: inline;
+}
+
+#EventBody{
+  left: 1.133%;
+  background: #00E024;
+  
+}
+
+#NewsBody{
+  left: 74.193%;
+  background: #FFB800;
+  
+}
+
+.NameBody{
+  left: 26.196%;
+  top: 18.75%;
+
+  width: 46.667%;
+  height: 62.5%;
+  background: #00C2FF;
+  border-radius: 3vmin;
+
+  display: inline;
+  position: absolute;
+}
+
+.containerStickyNote {
+  width: 88%;
+  height: 150%;
+  
+  top: 13%;
+  left: 8%;
+  gap: 0px;
+  opacity: 0px;  
+  border: 1px solid #767676;
+
+  background: #f2f2f2;
+  position: absolute;
+  flex-direction: column;
+  
+  display: grid;
+  grid-template-columns: repeat(5, 20%); 
+  grid-template-rows: repeat(3, 33.334%);
+}
+
+
+
+.StickyNote{
+  font-family: Inter;
+  text-align: left;
+
+  width: 100%;
+  height: 100%;
+  background: #00E024;
+
+  border-radius: 2vmin;
+  border-bottom: 1px solid #767676;
+  border-right: 1px solid #767676;
+  
+}
+
+.SubjectName{
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 24.2px;
+  text-align: center;  
+
+  width: 100%;
+  height: 100%;
+  top: 2%;
+  left: 2.6%;
+  border-radius: 1vmin;
+  background: red;/*#D9D9D9;*/
+}
+
+#English{
+  background: blue;
+}
+
+#Russian{
+  background: #FED800;
+}
+
+.VminText{
+  text-align: center;
+  font-family: Verdana;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vmin;
+  line-height: 3vmin;
+}
+
+

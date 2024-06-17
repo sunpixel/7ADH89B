@@ -1,16 +1,80 @@
 import React from 'react'
 import Navigation from './Nav/Navigation'
+import "./css/HomeWork.css"
 
 function HomeWork() {
   return (
     <>
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      <div style={{ flexShrink: 0, position: 'absolute', left: 0 }}>
-        <Navigation />
+    <div className='HW'>
+      <div className='HW_Container'>
+          <div style={{ flexShrink: 0, position: 'absolute', top: '10%', left: 0 }}>
+            <Navigation />
+          </div>        
       </div>
-      <div style={{ fontSize: '36px' }}>Home Work</div>
+      <div className='TopPanelBody'>
+        <div className='EventNewsBody' id="EventBody">
+          <div className='VminText'>События</div>
+        </div>
+        <div className='NameBody'>
+          <div className='VminText'>H.H</div>
+        </div>
+        <div className='EventNewsBody' id="NewsBody">
+          <div className='VminText'>Новости</div>
+        </div>
+      </div>
+      <div className='containerStickyNote'>      
+        
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote'>
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+          <div className='StickyNote' id="English">
+            <div className='SubjectName'>События</div>
+          </div>
+        
+      </div>
     </div>
-  </>
+    
+
+    </>
   )
 }
 

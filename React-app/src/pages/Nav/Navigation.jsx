@@ -25,7 +25,8 @@ function Navigation ()
                 <button id="sb_4" className='Nav_Container-1' onClick={() => redirect('/other')}>
                     <h2 className='text-align'>OTHER</h2>
                 </button>
-            </div>
+                
+            </div>            
         </div>
     );
 }
