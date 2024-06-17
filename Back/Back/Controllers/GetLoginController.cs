@@ -8,17 +8,19 @@ namespace back.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class loginController : ControllerBase
+    public class GetLoginController : ControllerBase
     {
         private readonly AppDbContext _context;
 
-        public loginController(AppDbContext context)
+        public GetLoginController(AppDbContext context)
         {
             _context = context;
         }
 
-/*        [HttpPost]
-        public IActionResult Authenticate([FromBody] ScheduleCredentials schedule)
+        // Works
+
+        [HttpPost]
+        public IActionResult Authenticate([FromBody] UserCredentials credentials)
         {
             // Find the user by username and password
 
@@ -26,9 +28,9 @@ namespace back.Controllers
 
             // Each user must be made with this code
 
-            var user = _context.Users.FirstOrDefault(u => 
-            u.Username == sup.MakeHash(userCredentials.Username).ToString() &&
-            u.Password == sup.MakeHash(userCredentials.Password).ToString());
+            var user = _context.Users.FirstOrDefault(u =>
+            u.Username == credentials.Username.ToString() &&
+            u.Password == sup.MakeHash(credentials.Password).ToString());
 
 
             if (user == null)
@@ -37,7 +39,7 @@ namespace back.Controllers
             }
 
             return Ok(new { UserId = user.Id });
-        }*/
+        }
     }
 }
 

@@ -9,20 +9,22 @@ namespace back.Controllers // Update with your namespace
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserInfoController : ControllerBase
+    public class GetUserInfoController : ControllerBase
     {
         private readonly AppDbContext _context;
 
-        public UserInfoController(AppDbContext context)
+        public GetUserInfoController(AppDbContext context)
         {
             _context = context;
         }
 
-/*        // GET: api/UserInfo/5
+        // GET: api/UserInfo/5
+        // Works
+
         [HttpGet("{id}")]
-        public async Task<ActionResult<UserInfo>> GetUserInfo(int id)
+        public async Task<ActionResult> GetUserInfo(string id)
         {
-            var userInfo = await _context.UserInfos.FindAsync(id);
+            var userInfo = await _context.UsersInfos.FirstOrDefaultAsync(u => u.UserId == id);
 
             if (userInfo == null)
             {
@@ -30,6 +32,6 @@ namespace back.Controllers // Update with your namespace
             }
 
             return Ok(userInfo); // Returns JSON data
-        }*/
+        }
     }
 }
