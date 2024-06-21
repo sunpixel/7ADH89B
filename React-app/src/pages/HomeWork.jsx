@@ -22,54 +22,10 @@ function HomeWork() {
           <div className='VminText'>Новости</div>
         </div>
       </div>
-      <div className='containerStickyNote'>      
-        
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote'>
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-          <div className='StickyNote' id="English">
-            <div className='SubjectName'>События</div>
-          </div>
-        
+      <div className='Grid'>      
+
+        <div className='StickyNote'></div>
+
       </div>
     </div>
     

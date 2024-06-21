@@ -85,30 +85,37 @@
   opacity: 0px;  
   border: 1px solid #767676;
 
-  background: #f2f2f2;
+  background: white;
   position: absolute;
   flex-direction: column;
   
   display: grid;
-  grid-template-columns: repeat(5, 20%); 
-  grid-template-rows: repeat(3, 33.334%);
+  grid-gap: 5px;
+  grid-template-columns: repeat(6, 16.667%);
+  grid-template-rows: repeat(5, 20%);
 }
 
-
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 85vw;  /* VW allows to set size in proportion with window size*/
+  height: 90vw;
+}
 
 .StickyNote{
   font-family: Inter;
-  text-align: left;
-
-  width: 100%;
-  height: 100%;
   background: #00E024;
-
-  border-radius: 2vmin;
-  border-bottom: 1px solid #767676;
-  border-right: 1px solid #767676;
-  
+  grid-column: span 6; /* span the entire width of the grid */
+  grid-row: span 1; /* span 1 row */
 }
+
 
 .SubjectName{
   font-family: Inter;
