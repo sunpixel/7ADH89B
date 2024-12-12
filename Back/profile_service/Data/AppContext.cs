@@ -2,7 +2,7 @@
 using profile_service.Data_classes;
 
 
-namespace profile_service
+namespace profile_service.Data
 {
     public class AppDbContext : DbContext
     {
@@ -19,10 +19,10 @@ namespace profile_service
 
             // Ensure the database is created
 
-            using (var context = new AppDbContext())
+/*            using (var context = new AppDbContext())
             {
                 context.Database.EnsureCreated();
-            }
+            }*/
         }
 
 
