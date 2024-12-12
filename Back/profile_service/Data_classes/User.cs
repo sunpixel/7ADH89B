@@ -25,6 +25,6 @@ namespace profile_service.Data_classes
         public DateTime? CreatedAt { get; set; } = DateTime.UtcNow;
 
         // Navigation properties
-        public Profile Profile { get; set; }
+        public Profile? Profile { get; set; }
     }
 }

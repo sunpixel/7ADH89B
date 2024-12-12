@@ -83,13 +83,31 @@ namespace profile_service.Controllers
                 return BadRequest("User data is null.");
             }
 
-            // Add the user to the context
-
-            // Replace the line causing the error with the correct BCrypt usage
+            // Hash the user's password
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             user.CreatedAt = DateTime.UtcNow;
+
+            // Add the user to the context
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
+
+            // Check if the profile is null and create an empty profile if necessary
+            if (user.Profile == null)
+            {
+                // Load a random picture from a file or resource
+                byte[] defaultPicture = System.IO.File.ReadAllBytes("defaults/picture.png");
+
+                user.Profile = new Profile
+                {
+                    UserId = user.Id,
+                    F_Name = string.Empty,
+                    Profile_picture = defaultPicture,
+                    Enrolment_day = default,
+                    Enrolllment_status = string.Empty
+                };
+                _context.Profiles.Add(user.Profile);
+                await _context.SaveChangesAsync();
+            }
 
             // Return the created user
             return CreatedAtAction("GetUser", new { id = user.Id }, user);

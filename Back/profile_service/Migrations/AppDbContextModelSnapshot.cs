@@ -81,8 +81,7 @@ namespace profile_service.Migrations
 
             modelBuilder.Entity("profile_service.Data_classes.User", b =>
                 {
-                    b.Navigation("Profile")
-                        .IsRequired();
+                    b.Navigation("Profile");
                 });
 #pragma warning restore 612, 618
         }
