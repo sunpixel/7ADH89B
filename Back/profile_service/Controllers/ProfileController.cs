@@ -26,5 +26,47 @@ namespace profile_service.Controllers
             _logger = logger;
         }
 
+
+        // A test to see if the profile service is running
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Profile>>> GetProfiles()
+        {
+            _logger.LogInformation("Getting all profiles");
+            return await _context.Profiles.ToListAsync();
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> EditProfile(int id, Profile profile)
+        {
+            if (id != profile.UserId)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(profile).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ProfileExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+        public bool ProfileExists(int id)
+        {
+            return _context.Profiles.Any(e => e.UserId == id);
+        }
+
     }
 }
