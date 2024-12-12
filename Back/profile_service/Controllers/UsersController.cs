@@ -16,16 +16,19 @@ namespace profile_service.Controllers
     public class UsersController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly ILogger<UsersController> _logger;
 
-        public UsersController(AppDbContext context)
+        public UsersController(AppDbContext context, ILogger<UsersController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET: api/Users
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
+            _logger.LogInformation("Getting all users");
             return await _context.Users.ToListAsync();
         }
 
@@ -110,7 +113,7 @@ namespace profile_service.Controllers
             }
 
             // Return the created user
-            return CreatedAtAction("GetUser", new { id = user.Id }, user);
+            return CreatedAtAction("GetUser", new { id = user.Id }, user.Id);
         }
 
         // DELETE: api/Users/{id}
