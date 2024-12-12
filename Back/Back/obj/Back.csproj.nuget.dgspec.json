@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\back\\back.csproj": {}
+    "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\back\\back.csproj": {
+    "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\back\\back.csproj",
+        "projectUniqueName": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\back.csproj",
         "projectName": "back",
-        "projectPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\back\\back.csproj",
+        "projectPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\back.csproj",
         "packagesPath": "C:\\Users\\SunPixel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\back\\obj\\",
+        "outputPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -74,7 +74,7 @@
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             }
           },
           "imports": [
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
