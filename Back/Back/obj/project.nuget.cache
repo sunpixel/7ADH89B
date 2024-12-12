@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ORUbDVqNEt4=",
+  "dgSpecHash": "GSkzsoh9IGM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\back\\back.csproj",
+  "projectFilePath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\back\\back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SunPixel\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\SunPixel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
