@@ -78,16 +78,26 @@ namespace profile_service.Controllers
 
         // POST: api/Users
         [HttpPost]
-        public async Task<ActionResult<User>> PostUser(User user)
+        public async Task<ActionResult<User>> PostUser(User_Request request)
         {
             // Ensure the user object is valid
-            if (user == null)
+            if (request == null)
             {
                 return BadRequest("User data is null.");
             }
 
+
+            // Create a new User
+            var user = new User
+            {
+                Username = request.Username,
+                Password = BCrypt.Net.BCrypt.HashPassword(request.Password),
+                Email = request.Email,
+                CreatedAt = DateTime.UtcNow
+            };
+
             // Hash the user's password
-            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+            user.Password = BCrypt.Net.BCrypt.HashPassword(request.Password);
             user.CreatedAt = DateTime.UtcNow;
 
             // Add the user to the context
@@ -103,17 +113,24 @@ namespace profile_service.Controllers
                 user.Profile = new Profile
                 {
                     UserId = user.Id,
-                    F_Name = string.Empty,
+                    F_name = string.Empty,
                     Profile_picture = defaultPicture,
                     Enrolment_day = default,
-                    Enrolllment_status = string.Empty
+                    Enrolllment_status = EnrollmentStatus.Pending
                 };
                 _context.Profiles.Add(user.Profile);
                 await _context.SaveChangesAsync();
             }
 
-            // Return the created user
-            return CreatedAtAction("GetUser", new { id = user.Id }, user.Id);
+            // Create a User_Response object to send back as JSON
+            var userResponse = new User_Response
+            {
+                Id = user.Id,
+                Username = user.Username
+            };
+
+            // Return the created user as JSON
+            return Ok(userResponse);
         }
 
         // DELETE: api/Users/{id}
@@ -129,7 +146,14 @@ namespace profile_service.Controllers
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            var userResponse = new User_Response
+            {
+                Id = user.Id,
+                Username = user.Username
+            };
+
+            // Return the created user as JSON
+            return Ok(userResponse);
         }
 
         private bool UserExists(int id)

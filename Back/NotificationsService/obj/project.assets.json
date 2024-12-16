@@ -3746,23 +3746,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SunnyPixel\\.nuget\\packages\\": {},
+    "C:\\Users\\SunPixel\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SunnyPixel\\Desktop\\Programming\\GitRepos\\7ADH89B\\Back\\NotificationsService\\NotificationsService.csproj",
+      "projectUniqueName": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\NotificationsService\\NotificationsService.csproj",
       "projectName": "NotificationsService",
-      "projectPath": "C:\\Users\\SunnyPixel\\Desktop\\Programming\\GitRepos\\7ADH89B\\Back\\NotificationsService\\NotificationsService.csproj",
-      "packagesPath": "C:\\Users\\SunnyPixel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SunnyPixel\\Desktop\\Programming\\GitRepos\\7ADH89B\\Back\\NotificationsService\\obj\\",
+      "projectPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\NotificationsService\\NotificationsService.csproj",
+      "packagesPath": "C:\\Users\\SunPixel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\NotificationsService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\SunnyPixel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SunPixel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3788,8 +3788,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -3839,7 +3840,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

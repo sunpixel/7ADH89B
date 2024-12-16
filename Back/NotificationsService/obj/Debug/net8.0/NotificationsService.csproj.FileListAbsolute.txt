@@ -160,3 +160,14 @@ C:\Users\Admin\source\repos\NotificationsService\NotificationsService\obj\Debug\
 C:\Users\Admin\source\repos\NotificationsService\NotificationsService\obj\Debug\net8.0\NotificationsService.pdb
 C:\Users\Admin\source\repos\NotificationsService\NotificationsService\obj\Debug\net8.0\NotificationsService.genruntimeconfig.cache
 C:\Users\Admin\source\repos\NotificationsService\NotificationsService\obj\Debug\net8.0\ref\NotificationsService.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\NotificationsService\obj\Debug\net8.0\NotificationsService.csproj.AssemblyReference.cache
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\NotificationsService\obj\Debug\net8.0\NotificationsService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\NotificationsService\obj\Debug\net8.0\NotificationsService.AssemblyInfoInputs.cache
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\NotificationsService\obj\Debug\net8.0\NotificationsService.AssemblyInfo.cs
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\NotificationsService\obj\Debug\net8.0\NotificationsService.csproj.CoreCompileInputs.cache
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\NotificationsService\obj\Debug\net8.0\NotificationsService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\NotificationsService\obj\Debug\net8.0\NotificationsService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\NotificationsService\obj\Debug\net8.0\NotificationsService.sourcelink.json
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\NotificationsService\obj\Debug\net8.0\NotificationsService.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\NotificationsService\obj\Debug\net8.0\refint\NotificationsService.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\NotificationsService\obj\Debug\net8.0\NotificationsService.pdb

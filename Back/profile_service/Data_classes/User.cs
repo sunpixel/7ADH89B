@@ -27,4 +27,17 @@ namespace profile_service.Data_classes
         // Navigation properties
         public Profile? Profile { get; set; }
     }
+
+    public class User_Request
+    {
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
+    }
+
+    public class User_Response
+    {
+        public int Id { get; set; }
+        public string Username { get; set; }
+    }
 }

@@ -160,3 +160,14 @@ C:\Users\Admin\source\repos\ContractService\ContractService\obj\Debug\net8.0\ref
 C:\Users\Admin\source\repos\ContractService\ContractService\obj\Debug\net8.0\ContractService.pdb
 C:\Users\Admin\source\repos\ContractService\ContractService\obj\Debug\net8.0\ContractService.genruntimeconfig.cache
 C:\Users\Admin\source\repos\ContractService\ContractService\obj\Debug\net8.0\ref\ContractService.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\ContractService\obj\Debug\net8.0\ContractService.csproj.AssemblyReference.cache
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\ContractService\obj\Debug\net8.0\ContractService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\ContractService\obj\Debug\net8.0\ContractService.AssemblyInfoInputs.cache
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\ContractService\obj\Debug\net8.0\ContractService.AssemblyInfo.cs
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\ContractService\obj\Debug\net8.0\ContractService.csproj.CoreCompileInputs.cache
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\ContractService\obj\Debug\net8.0\ContractService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\ContractService\obj\Debug\net8.0\ContractService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\ContractService\obj\Debug\net8.0\ContractService.sourcelink.json
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\ContractService\obj\Debug\net8.0\ContractService.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\ContractService\obj\Debug\net8.0\refint\ContractService.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\ContractService\obj\Debug\net8.0\ContractService.pdb
