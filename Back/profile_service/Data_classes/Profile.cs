@@ -21,7 +21,7 @@ namespace profile_service.Data_classes
 
         public string F_name { get; set; }
         public byte[] Profile_picture { get; set; }
-        public DateOnly Enrolment_day { get; set; }
+        public DateOnly? Enrolment_day { get; set; }
         public EnrollmentStatus Enrolllment_status { get; set; }
 
         // Navigation property
