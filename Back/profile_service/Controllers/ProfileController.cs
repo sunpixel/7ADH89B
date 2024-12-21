@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using profile_service.Data;
 using profile_service.Data_classes;
+using profile_service.Workers;
+
 
 namespace profile_service.Controllers
 {
@@ -9,35 +9,33 @@ namespace profile_service.Controllers
     [ApiController]
     public class ProfileController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly ProfileWorker _profileWorker;
 
-        public ProfileController(AppDbContext context)
+        public ProfileController(ProfileWorker profileWorker)
         {
-            _context = context;
+            _profileWorker = profileWorker;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Profile>>> GetProfiles()
+        public async Task<ActionResult<IEnumerable<Profile_Request>>> GetProfiles()
         {
-            return await _context.Profiles.ToListAsync();
+            var profiles = await _profileWorker.GetProfilesAsync();
+            return Ok(profiles);
         }
 
-
-        // GET: api/Profile/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Profile>> GetProfile(int id)
+        public async Task<ActionResult<Profile_Request>> GetProfile(int id)
         {
-            var profile = await _context.Profiles.FindAsync(id);
+            var profile = await _profileWorker.GetProfileAsync(id);
 
             if (profile == null)
             {
                 return NotFound();
             }
 
-            return profile;
+            return Ok(profile);
         }
 
-        // PUT: api/Profile/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProfile(int id, [FromBody] Profile_Request request)
         {
@@ -46,60 +44,25 @@ namespace profile_service.Controllers
                 return BadRequest("The request field is required.");
             }
 
-            var profile = await _context.Profiles.FindAsync(id);
-            if (profile == null)
+            var result = await _profileWorker.UpdateProfileAsync(id, request);
+            if (!result)
             {
                 return NotFound();
-            }
-
-            // Update the profile with the request data
-            profile.F_name = request.F_name;
-            profile.Enrolment_day = request.Enrolment_day;
-            profile.Enrolllment_status = request.Enrolllment_status;
-
-            _context.Entry(profile).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ProfileExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
             }
 
             return NoContent();
         }
 
-
-
-            // DELETE: api/Profile/5
-            [HttpDelete("{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProfile(int id)
         {
-            var profile = await _context.Profiles.FindAsync(id);
-            if (profile == null)
+            var result = await _profileWorker.DeleteProfileAsync(id);
+            if (!result)
             {
                 return NotFound();
             }
 
-            _context.Profiles.Remove(profile);
-            await _context.SaveChangesAsync();
-
             return NoContent();
-        }
-
-        private bool ProfileExists(int id)
-        {
-            return _context.Profiles.Any(e => e.UserId == id);
         }
     }
 }
-

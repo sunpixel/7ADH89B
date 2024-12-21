@@ -569,3 +569,4 @@ C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\bin\Debug\n
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\obj\Debug\net8.0\staticwebassets\msbuild.back.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\back\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\back\back\bin\Debug\net8.0\RabbitMQ.Client.dll

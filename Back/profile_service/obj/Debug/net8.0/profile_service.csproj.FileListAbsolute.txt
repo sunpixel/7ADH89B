@@ -180,7 +180,6 @@ C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\NuGet.Common.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\NuGet.Configuration.dll
@@ -192,11 +191,8 @@ C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\NuGet.Protocol.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\NuGet.Versioning.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\System.Drawing.Common.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\System.Security.Permissions.dll
-C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\System.Windows.Extensions.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\af\Humanizer.resources.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\ar\Humanizer.resources.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\az\Humanizer.resources.dll
@@ -284,8 +280,6 @@ C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
-C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\SunPixel\Desktop\Programming\Repositories\7ADH89B\Back\profile_service\bin\Debug\net8.0\System.Formats.Asn1.dll

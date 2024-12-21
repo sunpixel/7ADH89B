@@ -1,0 +1,130 @@
+[
+  {
+    "ContainingType": "back.Controllers.GetHomeWorkController",
+    "Method": "GetHomeWork",
+    "RelativePath": "api/GetHomeWork/{group_id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "back.Controllers.GetLoginController",
+    "Method": "Authenticate",
+    "RelativePath": "api/GetLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "credentials",
+        "Type": "back.Additional.UserCredentials",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "back.Controllers.GetScheduleController",
+    "Method": "GetSchedule",
+    "RelativePath": "api/GetSchedule/{group_id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "back.Controllers.GetUserInfoController",
+    "Method": "GetUserInfo",
+    "RelativePath": "api/GetUserInfo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "back.Controllers.Creators.HomeWorkCreateController",
+    "Method": "Create",
+    "RelativePath": "api/HomeWorkCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "homeWork",
+        "Type": "back.Additional.HomeWorkCredentilas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "back.Controllers.Creators.ScheduleCreateController",
+    "Method": "Create",
+    "RelativePath": "api/ScheduleCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "homeWork",
+        "Type": "back.Additional.ScheduleCredentials",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "back.Controllers.Creators.UserCreateController",
+    "Method": "Create",
+    "RelativePath": "api/UserCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "credentials",
+        "Type": "back.Additional.UserCredentials",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "back.Controllers.Creators.UserInfoCreateController",
+    "Method": "Create",
+    "RelativePath": "api/UserInfoCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UIC",
+        "Type": "back.Additional.UserInfoCredentials",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

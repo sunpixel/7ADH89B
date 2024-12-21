@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[profile_service.Data_classes.Profile, profile_service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[profile_service.Data_classes.Profile_Request, profile_service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -35,7 +35,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "profile_service.Data_classes.Profile",
+        "Type": "profile_service.Data_classes.Profile_Request",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -118,7 +118,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "profile_service.Data_classes.User",
+        "Type": "profile_service.Data_classes.User_Response",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -168,8 +168,8 @@
         "IsRequired": true
       },
       {
-        "Name": "user",
-        "Type": "profile_service.Data_classes.User",
+        "Name": "request",
+        "Type": "profile_service.Data_classes.User_Request",
         "IsRequired": true
       }
     ],
