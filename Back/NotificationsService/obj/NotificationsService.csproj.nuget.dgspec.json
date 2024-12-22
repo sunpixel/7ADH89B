@@ -11,7 +11,7 @@
         "projectName": "NotificationsService",
         "projectPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\NotificationsService\\NotificationsService.csproj",
         "packagesPath": "C:\\Users\\SunPixel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\Back\\NotificationsService\\obj\\",
+        "outputPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\NotificationsService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -67,13 +67,17 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "RabbitMQ.Client": {
               "target": "Package",
               "version": "[6.4.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[7.2.0, )"
+              "version": "[6.6.2, )"
             }
           },
           "imports": [
