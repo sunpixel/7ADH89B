@@ -22,14 +22,13 @@ namespace profile_service.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Enrolllment_status")
-                        .IsRequired()
+                    b.Property<int>("Enrolllment_status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateOnly?>("Enrolment_day")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateOnly>("Enrolment_day")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("F_Name")
+                    b.Property<string>("F_name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -58,6 +57,9 @@ namespace profile_service.Migrations
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Username")
                         .IsRequired()

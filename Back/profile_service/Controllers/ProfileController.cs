@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using profile_service.Data_classes;
 using profile_service.Workers;
-
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace profile_service.Controllers
 {
@@ -17,6 +19,7 @@ namespace profile_service.Controllers
         }
 
         [HttpGet]
+        [Authorize(Policy = "AdminPolicy")]
         public async Task<ActionResult<IEnumerable<Profile_Request>>> GetProfiles()
         {
             var profiles = await _profileWorker.GetProfilesAsync();
@@ -24,6 +27,7 @@ namespace profile_service.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Policy = "UserPolicy")]
         public async Task<ActionResult<Profile_Request>> GetProfile(int id)
         {
             var profile = await _profileWorker.GetProfileAsync(id);
@@ -37,6 +41,7 @@ namespace profile_service.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Policy = "EditPolicy")]
         public async Task<IActionResult> PutProfile(int id, [FromBody] Profile_Request request)
         {
             if (request == null)
@@ -54,6 +59,7 @@ namespace profile_service.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Policy = "DeletePolicy")]
         public async Task<IActionResult> DeleteProfile(int id)
         {
             var result = await _profileWorker.DeleteProfileAsync(id);

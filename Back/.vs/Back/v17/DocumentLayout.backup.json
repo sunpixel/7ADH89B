@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\workers\\userworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\workers\\userworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\data_classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\data_classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\data_classes\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\data_classes\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\workers\\userworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\workers\\userworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\authorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|solutionrelative:profile_service\\authorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59E81791-5935-4357-A248-7362BC326681}|profile_service\\profile_service.csproj|c:\\users\\sunpixel\\desktop\\programming\\repositories\\7adh89b\\back\\profile_service\\workers\\profileworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,93 +63,111 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\appsettings.json",
+              "RelativeDocumentMoniker": "profile_service\\appsettings.json",
+              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\appsettings.json",
+              "RelativeToolTip": "profile_service\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAgAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-26T22:20:13.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Data_classes\\User.cs",
               "RelativeDocumentMoniker": "profile_service\\Data_classes\\User.cs",
               "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Data_classes\\User.cs",
               "RelativeToolTip": "profile_service\\Data_classes\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T21:11:41.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T22:12:57.638Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Profile.cs",
-              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Data_classes\\Profile.cs",
-              "RelativeDocumentMoniker": "profile_service\\Data_classes\\Profile.cs",
-              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Data_classes\\Profile.cs",
-              "RelativeToolTip": "profile_service\\Data_classes\\Profile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T21:09:42.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserWorker.cs",
-              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Workers\\UserWorker.cs",
-              "RelativeDocumentMoniker": "profile_service\\Workers\\UserWorker.cs",
-              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Workers\\UserWorker.cs",
-              "RelativeToolTip": "profile_service\\Workers\\UserWorker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T21:07:45.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "profile_service\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Controllers\\UsersController.cs",
               "RelativeToolTip": "profile_service\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAUwFsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T21:06:46.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T22:07:16.52Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Program.cs",
-              "RelativeDocumentMoniker": "profile_service\\Program.cs",
-              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Program.cs",
-              "RelativeToolTip": "profile_service\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "AuthorizationHandler.cs",
+              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\AuthorizationHandler.cs",
+              "RelativeDocumentMoniker": "profile_service\\AuthorizationHandler.cs",
+              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\AuthorizationHandler.cs",
+              "RelativeToolTip": "profile_service\\AuthorizationHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T21:01:45.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T22:01:21.183Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "profile_service\\Controllers\\ProfileController.cs",
-              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "profile_service\\Controllers\\ProfileController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBoAAAA2AAAAAAAAAA==",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "profile_service\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "profile_service\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T20:32:00.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T21:43:07.529Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "UserWorker.cs",
+              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Workers\\UserWorker.cs",
+              "RelativeDocumentMoniker": "profile_service\\Workers\\UserWorker.cs",
+              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Workers\\UserWorker.cs",
+              "RelativeToolTip": "profile_service\\Workers\\UserWorker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T07:47:31.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ProfileWorker.cs",
               "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Workers\\ProfileWorker.cs",
               "RelativeDocumentMoniker": "profile_service\\Workers\\ProfileWorker.cs",
               "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Workers\\ProfileWorker.cs",
               "RelativeToolTip": "profile_service\\Workers\\ProfileWorker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwBsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T20:31:35.766Z",
+              "WhenOpened": "2024-12-22T07:47:15.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "profile_service\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "profile_service\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T07:47:02.916Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Program.cs",
+              "RelativeDocumentMoniker": "profile_service\\Program.cs",
+              "ToolTip": "C:\\Users\\SunPixel\\Desktop\\Programming\\Repositories\\7ADH89B\\back\\profile_service\\Program.cs",
+              "RelativeToolTip": "profile_service\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAUwFcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T07:46:02.253Z"
             }
           ]
         }

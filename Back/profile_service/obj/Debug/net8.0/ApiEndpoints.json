@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "profile_service.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "profile_service.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "profile_service.Controllers.ProfileController",
     "Method": "GetProfiles",
     "RelativePath": "api/Profile",
@@ -92,7 +108,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[profile_service.Data_classes.User, profile_service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[profile_service.Data_classes.User_Response, profile_service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -144,7 +160,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "profile_service.Data_classes.User",
+        "Type": "profile_service.Data_classes.User_Response",
         "MediaTypes": [
           "text/plain",
           "application/json",

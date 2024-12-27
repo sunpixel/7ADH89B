@@ -4,6 +4,15 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace profile_service.Data_classes
 {
+
+    public enum Role
+    {
+        Admin,
+        User,
+        Editor,
+        Guest
+    }
+
     public class User
     {
         [Key]
@@ -21,6 +30,9 @@ namespace profile_service.Data_classes
         [EmailAddress]
         [NotNull]
         public string Email { get; set; }
+
+        // Initialize Role to Guest by default
+        public Role Role { get; set; } = Role.Guest;
 
         public DateTime? CreatedAt { get; set; } = DateTime.UtcNow;
 

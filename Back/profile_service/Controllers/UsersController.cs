@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using profile_service.Data_classes;
 using profile_service.Workers;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace profile_service.Controllers
 {
@@ -17,7 +20,8 @@ namespace profile_service.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        [Authorize(Policy = "AdminPolicy")]
+        public async Task<ActionResult<IEnumerable<User_Response>>> GetUsers()
         {
             var users = await _userWorker.GetUsersAsync();
             return Ok(users);
@@ -25,7 +29,8 @@ namespace profile_service.Controllers
 
         // GET: api/Users/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(int id)
+        [Authorize(Policy = "AdminPolicy")]
+        public async Task<ActionResult<User_Response>> GetUser(int id)
         {
             var user = await _userWorker.GetUserAsync(id);
 
@@ -39,6 +44,7 @@ namespace profile_service.Controllers
 
         // PUT: api/Users/{id}
         [HttpPut("{id}")]
+        [Authorize(Policy = "EditPolicy")]
         public async Task<IActionResult> PutUser(int id, User_Request request)
         {
             if (request == null)
@@ -57,6 +63,7 @@ namespace profile_service.Controllers
 
         // POST: api/Users
         [HttpPost]
+        [Authorize(Policy = "AdminPolicy")]
         public async Task<ActionResult<User_Response>> PostUser(User_Request request)
         {
             if (request == null)
@@ -72,11 +79,12 @@ namespace profile_service.Controllers
                 Username = user.Username
             };
 
-            return Ok(userResponse);
+            return CreatedAtAction(nameof(GetUser), new { id = user.Id }, userResponse);
         }
 
         // DELETE: api/Users/{id}
         [HttpDelete("{id}")]
+        [Authorize(Policy = "AdminPolicy")]
         public async Task<IActionResult> DeleteUser(int id)
         {
             var result = await _userWorker.DeleteUserAsync(id);
