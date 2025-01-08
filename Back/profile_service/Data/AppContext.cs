@@ -9,11 +9,12 @@ namespace profile_service.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Profile> Profiles { get; set; }
+        public DbSet<Contract> Contracts { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "Data", "Users.db");
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "Data", "Users.db");   // To make it localised
 
             options.UseSqlite(@$"Data Source={path}");
 

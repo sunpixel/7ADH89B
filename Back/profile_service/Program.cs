@@ -46,8 +46,6 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddScoped<ProfileWorker>();
 builder.Services.AddScoped<UserWorker>();
 
-builder.Services.AddSingleton<IAuthorizationHandler, AuthorizationHandler>();
-
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
