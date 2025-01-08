@@ -65,6 +65,7 @@ namespace profile_service.Workers
             }
         }
 
+        // User creation
         public async Task<User> CreateUserAsync(User_Request request)
         {
             _logger.LogInformation("Creating a new user.");

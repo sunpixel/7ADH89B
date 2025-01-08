@@ -26,6 +26,11 @@ namespace profile_service.Controllers
             return await _context.Contracts.FindAsync(id);
         }
 
+        [HttpDelete("{id}")]
+
+        [HttpPut("{id}")]
+
+        [HttpPost("{id}")]
 
     }
 }
